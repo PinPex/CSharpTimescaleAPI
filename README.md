@@ -24,10 +24,10 @@ dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Host=localhost;Da
 
 ```
 
-3. Установить глобальный инструмент dotnet-ef (если не установлен)
+3. Установка инструментов
 
 ```bash
-dotnet tool install --global dotnet-ef
+.\run.ps1 install
 ```
 
 4. Выполнить миграции:

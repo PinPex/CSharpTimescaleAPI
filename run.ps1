@@ -8,6 +8,9 @@ switch ($Command) {
     "run" {
         dotnet run --project CSharpTimescaleAPI
     }
+    "install"{
+        dotnet tool install --global dotnet-ef
+    }
     "migrate" {
         dotnet ef database update --project CSharpTimescaleAPI
     }
