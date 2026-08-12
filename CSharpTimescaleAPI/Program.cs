@@ -27,6 +27,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
+app.MapGet("/", () => Results.Redirect("/swagger/index.html"));
+
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
